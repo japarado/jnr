@@ -1,0 +1,15 @@
+.SearchField {
+	position: relative;
+
+	&__icon {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+
+	&__input {
+		width: 15rem;
+		padding-left: 25px;
+		color: green;
+	}
+}

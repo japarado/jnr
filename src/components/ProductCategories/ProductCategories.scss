@@ -1,0 +1,15 @@
+.ProductCategories {
+	padding: 3rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+
+	&__categories {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+}
+
+.ProductCategories__category {
+	margin: 2rem 0;
+}

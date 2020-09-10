@@ -1,0 +1,46 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 13rem;
+    height: 6rem;
+  }
+
+  &__links {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    padding: 2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  &__search {
+    height: min-content;
+  }
+}
+
+.Navbar__item {
+  &:not(:first-child) {
+    margin-left: 2rem;
+  }
+
+  &--active {
+    border-bottom: 3px solid black;
+  }
+}
+
+.Navbar__link {
+  &--active {
+    border-bottom: 3px solid black;
+  }
+}

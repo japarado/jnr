@@ -1,0 +1,20 @@
+@mixin unstyled-list {
+  text-decoration: none;
+
+  &:link {
+    color: initial;
+  }
+
+  &:visited {
+    color: initial;
+  }
+
+  &:hover {
+    color: initial;
+  }
+}
+
+@mixin center-by-margin {
+	margin-left: auto;
+	margin-right: auto;
+}

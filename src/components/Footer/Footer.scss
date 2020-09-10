@@ -1,0 +1,32 @@
+.Footer {
+  display: grid;
+  grid-template-columns: 3fr repeat(2, 1fr);
+  align-items: center;
+  grid-column-gap: 2rem;
+  // TODO: Remove this 
+  margin-top: 10rem;
+
+  &__logo {
+	  width: 10rem;
+  }
+
+  &__icons {
+	  align-self: center;
+	  justify-self: right;
+  }
+
+  &__icon {
+	  width: 3rem;
+  }
+
+  &__copyright {
+	  display: inline;
+	  text-align: right;
+  }
+}
+
+.Footer__icon  {
+	&:not(:first-child) {
+		margin-left: 1.2rem;
+	}
+}
