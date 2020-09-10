@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-import "./TextInput.scss";
+import "./TextArea.scss";
 
 type Props = {
 	name?: string;
@@ -9,13 +9,12 @@ type Props = {
 	value?: string;
 	changeHandler?: Function;
 	classes?: string;
-	type?: string;
 }
 
-type InputEvent = React.ChangeEvent<HTMLInputElement>;
+type InputEvent = React.ChangeEvent<HTMLTextAreaElement>;
 
-const TextInput = (props: Props): React.ReactElement => 
-{
+const TextArea = (props: Props): React.ReactElement => 
+{ 
 	const [value, setValue] = useState("");
 	const handleChange = (e: InputEvent): void => 
 	{
@@ -29,17 +28,18 @@ const TextInput = (props: Props): React.ReactElement =>
 		}
 	};
 
+
 	return(
-		<input 
-			type={props.type}
-			className={`TextInput ${props.classes}`}
-			value={props.value ? props.value : value} 
-			name={props.name ? props.name : ""}
+		<textarea 
+			name={props.name}
 			id={props.id}
-			onChange={handleChange}
 			placeholder={props.placeholder}
-		/>
+			className={`TextArea ${props.classes}`}
+			onChange={handleChange}
+		>
+			{props.value ? props.value : value}
+		</textarea>
 	);
 };
 
-export default TextInput;
+export default TextArea;
