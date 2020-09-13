@@ -18,9 +18,4 @@
     border-bottom: 3px solid $color-orange;
     box-shadow: none;
   }
-
-  &:focus:invalid {
-    outline: none;
-    border-bottom: 3px solid $color-orange;
-  }
 }

@@ -9,6 +9,7 @@ type Props = {
 	value?: string;
 	changeHandler?: Function;
 	classes?: string;
+	required?: boolean;
 }
 
 type InputEvent = React.ChangeEvent<HTMLTextAreaElement>;
@@ -33,6 +34,7 @@ const TextArea = (props: Props): React.ReactElement =>
 			placeholder={props.placeholder}
 			className={`TextArea ${props.classes}`}
 			onChange={handleChange}
+			required={props.required}
 		>
 			{props.value ? props.value : value}
 		</textarea>

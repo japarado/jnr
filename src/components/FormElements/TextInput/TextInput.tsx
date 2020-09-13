@@ -10,6 +10,7 @@ type Props = {
 	changeHandler?: Function;
 	classes?: string;
 	type?: string;
+	required?: boolean;
 }
 
 type InputEvent = React.ChangeEvent<HTMLInputElement>;
@@ -35,6 +36,7 @@ const TextInput = (props: Props): React.ReactElement =>
 			id={props.id}
 			onChange={handleChange}
 			placeholder={props.placeholder}
+			required={props.required}
 		/>
 	);
 };
