@@ -21,12 +21,9 @@ const TextInput = (props: Props): React.ReactElement =>
 	{
 		if(props.changeHandler)
 		{
-			props.changeHandler(e);
+			props.changeHandler(e.target.value);
 		}
-		else 
-		{
-			setValue(e.target.value);
-		}
+		setValue(e.target.value);
 	};
 
 	return(

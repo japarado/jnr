@@ -1,3 +1,25 @@
+@import "../../../scss/abstracts/variables";
 .TextArea {
-	width: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  transition: all 0.3s;
+  border-bottom: 3px solid transparent;
+
+  &:focus {
+    outline: none;
+    border-bottom: 3px solid $color-red;
+  }
+
+  &:invalid {
+    border-bottom: 3px solid $color-orange;
+    box-shadow: none;
+  }
+
+  &:focus:invalid {
+    outline: none;
+    border-bottom: 3px solid $color-orange;
+  }
 }

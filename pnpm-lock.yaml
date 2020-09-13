@@ -2,13 +2,13 @@ dependencies:
   '@fortawesome/fontawesome-svg-core': 1.2.30
   '@fortawesome/free-solid-svg-icons': 5.14.0
   '@fortawesome/react-fontawesome': 0.1.11_e91d230af880419f914c1e9d225c6864
-  '@react-google-maps/api': 1.10.0_react-dom@16.13.1+react@16.13.1
+  '@react-google-maps/api': 1.10.1_react-dom@16.13.1+react@16.13.1
   '@testing-library/jest-dom': 4.2.4
   '@testing-library/react': 9.5.0_react-dom@16.13.1+react@16.13.1
   '@testing-library/user-event': 7.2.1
   '@types/googlemaps': 3.39.13
   '@types/jest': 24.9.1
-  '@types/node': 12.12.56
+  '@types/node': 12.12.58
   '@types/react': 16.9.49
   '@types/react-datepicker': 3.1.1
   '@types/react-dom': 16.9.8
@@ -38,7 +38,7 @@ packages:
       integrity: sha512-a9gxpmdXtZEInkCSHUJDLHZVBgb1QS0jhss4cPP93EW7s+uC5bikET2twEF3KV+7rDblJcmNvTR7VJejqd2C2g==
   /@babel/compat-data/7.11.0:
     dependencies:
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       invariant: 2.2.4
       semver: 5.7.1
     dev: false
@@ -107,7 +107,7 @@ packages:
     dependencies:
       '@babel/compat-data': 7.11.0
       '@babel/core': 7.9.0
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       invariant: 2.2.4
       levenary: 1.1.1
       semver: 5.7.1
@@ -1112,7 +1112,7 @@ packages:
       '@babel/plugin-transform-unicode-regex': 7.10.4_@babel+core@7.9.0
       '@babel/preset-modules': 0.1.4_@babel+core@7.9.0
       '@babel/types': 7.11.5
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       core-js-compat: 3.6.5
       invariant: 2.2.4
       levenary: 1.1.1
@@ -1180,7 +1180,7 @@ packages:
       '@babel/plugin-transform-unicode-regex': 7.10.4_@babel+core@7.9.0
       '@babel/preset-modules': 0.1.4_@babel+core@7.9.0
       '@babel/types': 7.11.5
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       core-js-compat: 3.6.5
       invariant: 2.2.4
       levenary: 1.1.1
@@ -1560,7 +1560,7 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
-  /@react-google-maps/api/1.10.0_react-dom@16.13.1+react@16.13.1:
+  /@react-google-maps/api/1.10.1_react-dom@16.13.1+react@16.13.1:
     dependencies:
       '@react-google-maps/infobox': 1.10.0
       '@react-google-maps/marker-clusterer': 1.10.0
@@ -1572,7 +1572,7 @@ packages:
       react: ^16.6.3
       react-dom: ^16.6.3
     resolution:
-      integrity: sha512-TpJ9Zq7EueHIqXhLKlTJi9T9teGU823Z/PfVfrQRDkv/aHh6nmQJmDPU79uNVut2hsqdy3G4HN2PYJTaB0zw7Q==
+      integrity: sha512-hb8urUcwZw99Cu3yQnZWUbXjR1Ym/8C21kSX6B02I29l6DXNxDbJ5Jo/T5swhnizPKY7TNhR1oTctC/HY7SQWA==
   /@react-google-maps/infobox/1.10.0:
     dev: false
     resolution:
@@ -1794,7 +1794,7 @@ packages:
   /@types/glob/7.1.3:
     dependencies:
       '@types/minimatch': 3.0.3
-      '@types/node': 12.12.56
+      '@types/node': 12.12.58
     dev: false
     resolution:
       integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==
@@ -1837,10 +1837,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
-  /@types/node/12.12.56:
+  /@types/node/12.12.58:
     dev: false
     resolution:
-      integrity: sha512-8OdIupOIZtmObR13fvGyTvpcuzKmMugkATeVcfNwCjGtHxhjEKmOvLqXwR8U9VOtNnZ4EXaSfNiLVsPinaCXkQ==
+      integrity: sha512-Be46CNIHWAagEfINOjmriSxuv7IVcqbGe+sDSg2SYCEz/0CRBy7LRASGfRbD8KZkqoePU73Wsx3UvOSFcq/9hA==
   /@types/parse-json/4.0.0:
     dev: false
     resolution:
@@ -2141,10 +2141,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
-  /abab/2.0.4:
+  /abab/2.0.5:
     dev: false
     resolution:
-      integrity: sha512-Eu9ELJWCz/c1e9gTiCY+FceWxcqzjYEbqMgtndnuSqZSUCOL73TWNK2mHfIj4Cw2E/ongOp+JISVNCmovt2KYQ==
+      integrity: sha512-9IK9EadsbHo6jLWIpxpR6pL0sazTXV6+SQv25ZB+F7Bj9mJNaOc4nCRabwd5M/JwmUa8idz6Eci6eKfJryPs6Q==
   /abbrev/1.1.1:
     dev: true
     resolution:
@@ -2544,7 +2544,7 @@ packages:
       integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
   /autoprefixer/9.8.6:
     dependencies:
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       caniuse-lite: 1.0.30001125
       colorette: 1.2.1
       normalize-range: 0.1.2
@@ -2633,7 +2633,7 @@ packages:
       integrity: sha512-7q7nC1tYOrqvUrN3LQK4GwSk/TQorZSOlO9C+RZDZpODgyN4ZlCqE5q9cDsyWOliN+aU9B4JX01xK9eJXowJLw==
   /babel-plugin-dynamic-import-node/2.3.3:
     dependencies:
-      object.assign: 4.1.0
+      object.assign: 4.1.1
     dev: false
     resolution:
       integrity: sha512-jZVI+s9Zg3IqA/kdi0i6UDCybUI3aSBLnglhYbSSjKlV7yF1F/5LWv8MakQmvYpnbJDS6fcBL2KzHSxNCMtWSQ==
@@ -2939,17 +2939,17 @@ packages:
   /browserslist/4.10.0:
     dependencies:
       caniuse-lite: 1.0.30001125
-      electron-to-chromium: 1.3.564
+      electron-to-chromium: 1.3.567
       node-releases: 1.1.61
       pkg-up: 3.1.0
     dev: false
     hasBin: true
     resolution:
       integrity: sha512-TpfK0TDgv71dzuTsEAlQiHeWQ/tiPqgNZVdv046fvNtBZrjbv2O3TsWCDU0AWGJJKCF/KsjNdLzR9hXOsh/CfA==
-  /browserslist/4.14.1:
+  /browserslist/4.14.2:
     dependencies:
       caniuse-lite: 1.0.30001125
-      electron-to-chromium: 1.3.564
+      electron-to-chromium: 1.3.567
       escalade: 3.0.2
       node-releases: 1.1.61
     dev: false
@@ -2957,7 +2957,7 @@ packages:
       node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7
     hasBin: true
     resolution:
-      integrity: sha512-zyBTIHydW37pnb63c7fHFXUG6EcqWOqoMdDx6cdyaDFriZ20EoVxcE95S54N+heRqY8m8IUgB5zYta/gCwSaaA==
+      integrity: sha512-HI4lPveGKUR0x2StIz+2FXfDk9SfVMrxn6PLh1JeGUwcuoDkdKZebWiyLRJ68iIPDpMI4JLVDf7S7XzslgWOhw==
   /bser/2.1.1:
     dependencies:
       node-int64: 0.4.0
@@ -3128,7 +3128,7 @@ packages:
       integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
   /caniuse-api/3.0.0:
     dependencies:
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       caniuse-lite: 1.0.30001125
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
@@ -3557,7 +3557,7 @@ packages:
       integrity: sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
   /core-js-compat/3.6.5:
     dependencies:
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       semver: 7.0.0
     dev: false
     resolution:
@@ -3961,7 +3961,7 @@ packages:
       integrity: sha1-hTz6D3y+L+1d4gMmuN1YEDX24vA=
   /data-urls/1.1.0:
     dependencies:
-      abab: 2.0.4
+      abab: 2.0.5
       whatwg-mimetype: 2.3.0
       whatwg-url: 7.1.0
     dev: false
@@ -4290,10 +4290,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-  /electron-to-chromium/1.3.564:
+  /electron-to-chromium/1.3.567:
     dev: false
     resolution:
-      integrity: sha512-fNaYN3EtKQWLQsrKXui8mzcryJXuA0LbCLoizeX6oayG2emBaS5MauKjCPAvc29NEY4FpLHIUWiP+Y0Bfrs5dg==
+      integrity: sha512-1aKkw0Hha1Bw9JA5K5PT5eFXC/TXbkJvUfNSNEciPUMgSIsRJZM1hF2GUEAGZpAbgvd8En21EA+Lv820KOhvqA==
   /elliptic/6.5.3:
     dependencies:
       bn.js: 4.11.9
@@ -4377,7 +4377,7 @@ packages:
       is-regex: 1.1.1
       object-inspect: 1.8.0
       object-keys: 1.1.1
-      object.assign: 4.1.0
+      object.assign: 4.1.1
       string.prototype.trimend: 1.0.1
       string.prototype.trimstart: 1.0.1
     dev: false
@@ -4391,12 +4391,12 @@ packages:
       function-bind: 1.1.1
       has: 1.0.3
       has-symbols: 1.0.1
-      is-callable: 1.2.0
+      is-callable: 1.2.1
       is-negative-zero: 2.0.0
       is-regex: 1.1.1
       object-inspect: 1.8.0
       object-keys: 1.1.1
-      object.assign: 4.1.0
+      object.assign: 4.1.1
       string.prototype.trimend: 1.0.1
       string.prototype.trimstart: 1.0.1
     dev: false
@@ -6075,12 +6075,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
-  /is-callable/1.2.0:
-    dev: false
-    engines:
-      node: '>= 0.4'
-    resolution:
-      integrity: sha512-pyVD9AaGLxtg6srb2Ng6ynWJqkHU9bEM087AKck0w8QwDarTfNcpIYoU8x8Hv2Icm8u6kFJM18Dag8lyqGkviw==
   /is-callable/1.2.1:
     dev: false
     engines:
@@ -6902,7 +6896,7 @@ packages:
       integrity: sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
   /jsdom/11.12.0:
     dependencies:
-      abab: 2.0.4
+      abab: 2.0.5
       acorn: 5.7.4
       acorn-globals: 4.3.4
       array-equal: 1.0.0
@@ -6933,7 +6927,7 @@ packages:
       integrity: sha512-y8Px43oyiBM13Zc1z780FrfNLJCXTL40EWlty/LXUtcjykRBNgLlCjWXpfSPBl2iv+N7koQN+dvqszHZgT/Fjw==
   /jsdom/14.1.0:
     dependencies:
-      abab: 2.0.4
+      abab: 2.0.5
       acorn: 6.4.1
       acorn-globals: 4.3.4
       array-equal: 1.0.0
@@ -7046,7 +7040,7 @@ packages:
   /jsx-ast-utils/2.4.1:
     dependencies:
       array-includes: 3.1.1
-      object.assign: 4.1.0
+      object.assign: 4.1.1
     dev: false
     engines:
       node: '>=4.0'
@@ -7970,17 +7964,17 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-95xEk68MU3e1n+OdOV5BBC3QRbs=
-  /object.assign/4.1.0:
+  /object.assign/4.1.1:
     dependencies:
       define-properties: 1.1.3
-      function-bind: 1.1.1
+      es-abstract: 1.18.0-next.0
       has-symbols: 1.0.1
       object-keys: 1.1.1
     dev: false
     engines:
       node: '>= 0.4'
     resolution:
-      integrity: sha512-exHJeq6kBKj58mqGyTQ9DFvrZC/eR6OwxzoM9YRoGBqrXYonaFyGiFMuc9VZrXf7DarreEwMpurG3dd+CNyW5w==
+      integrity: sha512-VT/cxmx5yaoHSOTSyrCygIDFco+RsibY2NM0a4RdEeY/4KgqezwFtK1yr3U67xYhqJSlASm2pKhLVzPj2lr4bA==
   /object.entries/1.1.2:
     dependencies:
       define-properties: 1.1.3
@@ -8543,9 +8537,9 @@ packages:
     dev: false
     resolution:
       integrity: sha512-clkFxk/9pcdb4Vkn0hAHq3YnxBQ2p0CGD1dy24jN+reBck+EWxMbxSUqN4Yj7t0w8csl87K6p0gxBe1utkJsYA==
-  /postcss-browser-comments/3.0.0_browserslist@4.14.1:
+  /postcss-browser-comments/3.0.0_browserslist@4.14.2:
     dependencies:
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       postcss: 7.0.32
     dev: false
     engines:
@@ -8611,7 +8605,7 @@ packages:
       integrity: sha512-aAe3OhkS6qJXBbqzvZth2Au4V3KieR5sRQ4ptb2b2O8wgvB3SJBsdG+jsn2BZbbwekDG8nTfcCNKcSfe/lEy8g==
   /postcss-colormin/4.0.3:
     dependencies:
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       color: 3.1.2
       has: 1.0.3
       postcss: 7.0.32
@@ -8826,7 +8820,7 @@ packages:
       integrity: sha512-alx/zmoeXvJjp7L4mxEMjh8lxVlDFX1gqWHzaaQewwMZiVhLo42TEClKaeHbRf6J7j82ZOdTJ808RtN0ZOZwvw==
   /postcss-merge-rules/4.0.3:
     dependencies:
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       caniuse-api: 3.0.0
       cssnano-util-same-parent: 4.0.1
       postcss: 7.0.32
@@ -8860,7 +8854,7 @@ packages:
   /postcss-minify-params/4.0.2:
     dependencies:
       alphanum-sort: 1.0.2
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       cssnano-util-get-arguments: 4.0.0
       postcss: 7.0.32
       postcss-value-parser: 3.3.1
@@ -8986,7 +8980,7 @@ packages:
       integrity: sha512-acwJY95edP762e++00Ehq9L4sZCEcOPyaHwoaFOhIwWCDfik6YvqsYNxckee65JHLKzuNSSmAdxwD2Cud1Z54A==
   /postcss-normalize-unicode/4.0.1:
     dependencies:
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       postcss: 7.0.32
       postcss-value-parser: 3.3.1
     dev: false
@@ -9017,9 +9011,9 @@ packages:
   /postcss-normalize/8.0.1:
     dependencies:
       '@csstools/normalize.css': 10.1.0
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       postcss: 7.0.32
-      postcss-browser-comments: 3.0.0_browserslist@4.14.1
+      postcss-browser-comments: 3.0.0_browserslist@4.14.2
       sanitize.css: 10.0.0
     dev: false
     engines:
@@ -9062,7 +9056,7 @@ packages:
   /postcss-preset-env/6.7.0:
     dependencies:
       autoprefixer: 9.8.6
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       caniuse-lite: 1.0.30001125
       css-blank-pseudo: 0.1.4
       css-has-pseudo: 0.10.0
@@ -9114,7 +9108,7 @@ packages:
       integrity: sha512-lgXW9sYJdLqtmw23otOzrtbDXofUdfYzNm4PIpNE322/swES3VU9XlXHeJS46zT2onFO7V1QFdD4Q9LiZj8mew==
   /postcss-reduce-initial/4.0.3:
     dependencies:
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       caniuse-api: 3.0.0
       has: 1.0.3
       postcss: 7.0.32
@@ -10954,7 +10948,7 @@ packages:
       integrity: sha512-XK+uv9kWwhZMZ1y7mysB+zoihsEj4wneFWAS5qoiLwzW0WzSqMrrsIy+a3zkQJq0ipFtBpX5W3MqyRIBF/WFGg==
   /stylehacks/4.0.3:
     dependencies:
-      browserslist: 4.14.1
+      browserslist: 4.14.2
       postcss: 7.0.32
       postcss-selector-parser: 3.1.2
     dev: false
@@ -12061,13 +12055,13 @@ specifiers:
   '@fortawesome/fontawesome-svg-core': ^1.2.30
   '@fortawesome/free-solid-svg-icons': ^5.14.0
   '@fortawesome/react-fontawesome': ^0.1.11
-  '@react-google-maps/api': ^1.10.0
+  '@react-google-maps/api': ^1.10.1
   '@testing-library/jest-dom': ^4.2.4
   '@testing-library/react': ^9.5.0
   '@testing-library/user-event': ^7.2.1
   '@types/googlemaps': ^3.39.13
   '@types/jest': ^24.9.1
-  '@types/node': ^12.12.56
+  '@types/node': ^12.12.58
   '@types/react': ^16.9.49
   '@types/react-datepicker': ^3.1.1
   '@types/react-dom': ^16.9.8

@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 
 import Navbar from "components/Navbar/Navbar";
-import Footer from "components/Footer/Footer";
+/* import Footer from "components/Footer/Footer"; */
 import Home from "pages/Home/Home";
 import AboutUs from "pages/AboutUs/AboutUs";
 import Products from "pages/Products/Products";
@@ -42,7 +42,7 @@ function App(): React.ReactElement
 				</Route>
 			</Switch>
 
-			<Footer/>
+			{/* <Footer/> */}
 		</Router>
 	);
 }
