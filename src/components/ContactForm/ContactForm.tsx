@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 import "./ContactForm.scss";
 
@@ -11,6 +11,11 @@ const ContactForm = (): React.ReactElement =>
 	const [contactNumber, setContactNumber] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
+
+	useEffect(() => 
+	{
+		console.table({name, contactNumber, email, message});
+	}, [name, contactNumber, email, message]);
 
 	return(
 		<form className="ContactForm">
