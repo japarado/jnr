@@ -19,7 +19,7 @@ const Navbar = (): React.ReactElement => (
 				<NavLink to="/about-us" className="Navbar__link" activeClassName="Navbar__link--active">About Us</NavLink>
 			</li>
 			<li className="Navbar__item">
-				<NavLink to="/products" className="Navbar__link" activeClassName="Navbar__link--active">Products</NavLink>
+				<NavLink to="/products/" className="Navbar__link" activeClassName="Navbar__link--active">Products</NavLink>
 			</li>
 			<li className="Navbar__item">
 				<NavLink to="/brands" className="Navbar__link" activeClassName="Navbar__link--active">Brands</NavLink>
