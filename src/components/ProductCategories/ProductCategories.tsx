@@ -14,48 +14,57 @@ const sampleData = [
 	{
 		imgUrl: ACImage,
 		text: "Air Conditioners",
-		id: 1
+		id: 1,
+		slug: "air-conditioners"
 	},
 	{
 		imgUrl: TVImage,
 		text: "Television",
-		id: 2
+		id: 2,
+		slug: "television"
 	},
 	{
 		imgUrl: CookingImage,
 		text: "Cooking",
-		id: 3
+		id: 3,
+		slug: "cooking"
 	},
 	{
 		imgUrl: ApplianceImage,
 		text: "Home Appliances",
-		id: 4
+		id: 4,
+		slug: "home-appliances"
 	},
 	{
 		imgUrl: MobileImage,
-		text: "Mobile Gadgets",
-		id: 5
+		text: "Home Entertainment",
+		id: 5,
+		slug: "home-entertainment"
 	},
 	{
 		imgUrl: BusinessImage,
-		text: "Business Machines",
-		id: 6
+		text: "Mobile and Gadgets",
+		id: 6,
+		slug: "mobile-and-gadgets"
 	},
 	{
 		imgUrl: BusinessImage,
-		text: "Business Machines",
-		id: 7
+		text: "Monitors",
+		id: 7,
+		slug: "monitors"
 	},
 	{
 		imgUrl: BusinessImage,
-		text: "Business Machines",
-		id: 8
+		text: "Small Appliances",
+		id: 8,
+		slug: "small-appliances"
 	},
 	{
 		imgUrl: BusinessImage,
-		text: "Business Machines",
-		id: 9
-	}
+		text: "Others",
+		id: 9,
+		slug: "others"
+	},
 ];
 
 const ProductCategories = (): React.ReactElement => (
@@ -65,7 +74,7 @@ const ProductCategories = (): React.ReactElement => (
 		<div className="ProductCategories__categories">
 			{sampleData.map((category) => (
 				<div className="ProductCategories__category" key={category.id}>
-					<ProductCategory imgUrl={category.imgUrl} text={category.text} id={category.id}/>
+					<ProductCategory imgUrl={category.imgUrl} text={category.text} id={category.id} slug={category.slug}/>
 				</div>
 			))
 			}
