@@ -35,9 +35,8 @@ const TextArea = (props: Props): React.ReactElement =>
 			className={`TextArea ${props.classes}`}
 			onChange={handleChange}
 			required={props.required}
-		>
-			{props.value ? props.value : value}
-		</textarea>
+			value={props.value ? props.value : value}
+		/>
 	);
 };
 

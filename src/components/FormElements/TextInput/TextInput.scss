@@ -17,5 +17,18 @@
   &:invalid {
     border-bottom: 3px solid $color-orange;
     box-shadow: none;
+	animation: pulsing-color 1s infinite ease-in;
   }
+}
+
+@keyframes pulsing-color {
+	0% {
+		border-bottom: 3px solid $color-orange;
+	}
+	50% {
+		border-bottom: 3px solid rgba($color-orange, 0.5);
+	}
+	50% {
+		border-bottom: 3px solid transparent;
+	}
 }
