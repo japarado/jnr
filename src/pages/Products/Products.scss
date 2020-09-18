@@ -1,3 +1,5 @@
-.ProductCategories {
-	background-color: #eaeaea;
+.Products {
+	&__section:not(:last-child) {
+		margin-bottom: 2rem;
+	}
 }
