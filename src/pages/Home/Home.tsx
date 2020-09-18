@@ -9,7 +9,7 @@ import ContactUs from "components/ContactUs/ContactUs";
 const Home = (): React.ReactElement => (
 	<main className="Home">
 		<div className="Home__section">
-			<Hero imgUrl="https://picsum.photos/1920/1080" heroText="this is nice"/>
+			<Hero imgUrl="https://picsum.photos/1920/1080" heroText="J&R Appliances"/>
 		</div>
 
 		<div className="Home__section">
