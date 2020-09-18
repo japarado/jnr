@@ -1,4 +1,7 @@
 import React from "react";
+
+import "./App.scss";
+
 import "./scss/main.scss";
 
 import {
@@ -18,32 +21,34 @@ import Brands from "pages/Brands/Brands";
 function App(): React.ReactElement
 {
 	return(
-		<Router>
-			<header className="u-m-bottom-2">
-				<Navbar/>
-			</header>
+		<div className="App">
+			<Router>
+				<header className="u-m-bottom-2">
+					<Navbar/>
+				</header>
 
-			<Switch>
-				<Route path="/about-us">
-					<AboutUs/>
-				</Route>
-				<Route path="/products/:id?">
-					<Products/>
-				</Route>
-				<Route path="/brands">
-					<Brands/>
-				</Route>
-				<Route path="/">
-					<Home/>
-				</Route>
+				<Switch>
+					<Route path="/about-us">
+						<AboutUs/>
+					</Route>
+					<Route path="/products/:slug?">
+						<Products/>
+					</Route>
+					<Route path="/brands">
+						<Brands/>
+					</Route>
+					<Route path="/">
+						<Home/>
+					</Route>
 
-				<Route>
-					<NotFound/>
-				</Route>
-			</Switch>
+					<Route>
+						<NotFound/>
+					</Route>
+				</Switch>
 
-			{/* <Footer/> */}
-		</Router>
+				{/* <Footer/> */}
+			</Router>
+		</div>
 	);
 }
 
