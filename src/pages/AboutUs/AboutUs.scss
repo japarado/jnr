@@ -1,0 +1,5 @@
+.AboutUs__section {
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
