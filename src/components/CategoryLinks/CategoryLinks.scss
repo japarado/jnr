@@ -1,0 +1,17 @@
+.CategoryLinks {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 0 5rem;
+
+	&__link {
+		margin-bottom: 3rem;
+	}
+}
+
+.CategoryLinks__link {
+	&:not(:last-child) {
+		margin-right: 3rem;
+	}
+}
