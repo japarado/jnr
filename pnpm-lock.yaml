@@ -13,6 +13,7 @@ dependencies:
   '@types/react-datepicker': 3.1.1
   '@types/react-dom': 16.9.8
   '@types/react-router-dom': 5.1.5
+  axios: 0.20.0
   ionicons: 5.1.2
   react: 16.13.1
   react-datepicker: 3.1.3_react-dom@16.13.1+react@16.13.1
@@ -2561,6 +2562,12 @@ packages:
   /aws4/1.10.1:
     resolution:
       integrity: sha512-zg7Hz2k5lI8kb7U32998pRRFin7zJlkfezGJjUc2heaD4Pw2wObakCDVzkKztTm/Ln7eiVvYsjqak0Ed4LkMDA==
+  /axios/0.20.0:
+    dependencies:
+      follow-redirects: 1.13.0
+    dev: false
+    resolution:
+      integrity: sha512-ANA4rr2BDcmmAQLOKft2fufrtuvlqR+cXNNinUmvfeSNCOF98PZL+7M/v1zIdGo7OLjEA9J2gXJL+j4zGsl0bA==
   /axobject-query/2.2.0:
     dev: false
     resolution:
@@ -12066,6 +12073,7 @@ specifiers:
   '@types/react-datepicker': ^3.1.1
   '@types/react-dom': ^16.9.8
   '@types/react-router-dom': ^5.1.5
+  axios: ^0.20.0
   ionicons: ^5.1.2
   node-sass: ^4.14.1
   react: ^16.13.1
