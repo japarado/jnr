@@ -1,9 +1,15 @@
-import React from 'react';
+import React from "react";
 
 import "./Brands.scss";
 
-const Brands = (): React.ReactElement => (
-	<h1>Brands Page</h1>
-)
+import Hero from "components/Hero/Hero";
 
-export default Brands
+const Brands = (): React.ReactElement => (
+	<main className="Brands">
+		<div className="Brands__section">
+			<Hero heroText="Brands" imgUrl="https://picsum.photos/1920/1080"/>
+		</div>
+	</main>
+);
+
+export default Brands;
