@@ -1,3 +1,5 @@
+@import "../../scss/abstracts/_variables.scss";
+
 .Navbar {
   display: flex;
   justify-content: space-between;
@@ -22,6 +24,8 @@
   &__link {
     text-decoration: none;
     font-size: 1.2rem;
+	border-bottom: 3px solid transparent;
+	transition: $standard-transition;
   }
 
   &__search {
