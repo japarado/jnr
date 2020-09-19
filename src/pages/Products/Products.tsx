@@ -14,6 +14,7 @@ import MobileImage from "../../assets/img/categories/mobiles_gadgets.png";
 import BusinessImage from "../../assets/img/categories/business_machine.png";
 import CategoryLink from "components/CategoryLink/CategoryLink";
 import CategoryLinks from "components/CategoryLinks/CategoryLinks";
+import ProductCategories from "components/ProductCategories/ProductCategories";
 
 type SlugPath = {slug: string};
 
@@ -78,6 +79,10 @@ const Products = (): React.ReactElement =>
 			
 			<div className="Products__section">
 				<CategoryLinks/>
+			</div>
+
+			<div className="Products__section">
+				<ProductCategories/>
 			</div>
 		</main>
 	);
