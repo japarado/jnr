@@ -69,8 +69,6 @@ const sampleData = [
 
 const ProductCategories = (): React.ReactElement => (
 	<div className="ProductCategories">
-		<h1 className="ProductCategories__header t-section-header u-center-text u-m-bottom-3">Product Categories</h1>
-
 		<div className="ProductCategories__categories">
 			{sampleData.map((category) => (
 				<div className="ProductCategories__category" key={category.id}>
