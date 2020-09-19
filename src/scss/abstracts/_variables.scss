@@ -8,3 +8,7 @@ $color-white: white;
 $color-black: black;
 
 $color-offwhite: rgba(255, 255, 255, 0.5);
+
+// Transition constants
+$standard-transition-time: 0.3s;
+$standard-transition: $standard-transition-time all ease;
