@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
 
 import "./Brand.scss";
 
-import {Link} from 'react-router-dom';
-
 type Props = {
 	imgUrl: string;
-	url: string;
+	altText?: string;
+	classNames?: string;
 }
 
-const Brand = ({imgUrl, url}: Props): React.ReactElement => (
-	<div>Brand</div>
-)
+const Brand = ({imgUrl, altText, classNames}: Props): React.ReactElement => (
+	<div className={`Brand ${classNames}`}>
+		<img className="Brand__image" src={imgUrl} alt={altText} />
+	</div>
+);
 
 export default Brand;

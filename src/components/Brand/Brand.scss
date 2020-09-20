@@ -1,0 +1,13 @@
+.Brand {
+	border: 1px solid;
+	height: 80px;
+	width: 300px;
+	display: flex;
+	align-items: center;
+
+	&__image {
+		object-fit: contain;
+		max-width: 100%;
+		max-height: auto;
+	}
+}
