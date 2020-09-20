@@ -1,11 +1,11 @@
 .BrandsContainer {
 	display: flex;
 	margin: 0 10rem;
-	border: 1px solid black;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	grid-row-gap: 3rem;
 
 	&__brand {
-		margin: 3rem;
 	}
 }
