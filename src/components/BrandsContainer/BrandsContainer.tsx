@@ -29,54 +29,54 @@ const brands: Brand[] = [
 		url: "",
 		imgUrl: PanasonicImg
 	},
-	/* { */
-	/* 	url: "", */
-	/* 	imgUrl: PanasonicImg */
-	/* }, */
-	/* { */
-	/* 	url: "", */
-	/* 	imgUrl: PanasonicImg */
-	/* }, */
-	/* { */
-	/* 	url: "", */
-	/* 	imgUrl: PanasonicImg */
-	/* }, */
-	/* { */
-	/* 	url: "", */
-	/* 	imgUrl: PanasonicImg */
-	/* }, */
-	/* { */
-	/* 	url: "", */
-	/* 	imgUrl: PanasonicImg */
-	/* }, */
-	/* { */
-	/* 	url: "", */
-	/* 	imgUrl: PanasonicImg */
-	/* }, */
-	/* { */
-	/* 	url: "", */
-	/* 	imgUrl: PanasonicImg */
-	/* }, */
-	/* { */
-	/* 	url: "", */
-	/* 	imgUrl: PanasonicImg */
-	/* }, */
-	/* { */
-	/* 	url: "", */
-	/* 	imgUrl: PanasonicImg */
-	/* }, */
-	/* { */
-	/* 	url: "", */
-	/* 	imgUrl: PanasonicImg */
-	/* }, */
-	/* { */
-	/* 	url: "", */
-	/* 	imgUrl: PanasonicImg */
-	/* }, */
-	/* { */
-	/* 	url: "", */
-	/* 	imgUrl: PanasonicImg */
-	/* }, */
+	{
+		url: "",
+		imgUrl: PanasonicImg
+	},
+	{
+		url: "",
+		imgUrl: PanasonicImg
+	},
+	{
+		url: "",
+		imgUrl: PanasonicImg
+	},
+	{
+		url: "",
+		imgUrl: PanasonicImg
+	},
+	{
+		url: "",
+		imgUrl: PanasonicImg
+	},
+	{
+		url: "",
+		imgUrl: PanasonicImg
+	},
+	{
+		url: "",
+		imgUrl: PanasonicImg
+	},
+	{
+		url: "",
+		imgUrl: PanasonicImg
+	},
+	{
+		url: "",
+		imgUrl: PanasonicImg
+	},
+	{
+		url: "",
+		imgUrl: PanasonicImg
+	},
+	{
+		url: "",
+		imgUrl: PanasonicImg
+	},
+	{
+		url: "",
+		imgUrl: PanasonicImg
+	},
 ];
 
 brands.forEach((brand: Brand, idx: number) => brand.id = idx);
