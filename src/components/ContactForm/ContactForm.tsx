@@ -14,7 +14,7 @@ const ContactForm = (): React.ReactElement =>
 
 	useEffect(() => 
 	{
-		console.table({name, contactNumber, email, message});
+		/* console.table({name, contactNumber, email, message}); */
 	}, [name, contactNumber, email, message]);
 
 	return(
