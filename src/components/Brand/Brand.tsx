@@ -5,12 +5,13 @@ import "./Brand.scss";
 type Props = {
 	imgUrl: string;
 	altText?: string;
-	classNames?: string;
+	containerClasses?: string;
+	imageClasses?: string;
 }
 
-const Brand = ({imgUrl, altText, classNames}: Props): React.ReactElement => (
-	<div className={`Brand ${classNames}`}>
-		<img className="Brand__image" src={imgUrl} alt={altText} />
+const Brand = (props: Props): React.ReactElement => (
+	<div className={`Brand ${props.containerClasses ? props.containerClasses : ""}`}>
+		<img className={`Brand__image ${props.imageClasses ? props.imageClasses : ""}`} src={props.imgUrl} alt={props.altText} />
 	</div>
 );
 
