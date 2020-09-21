@@ -4,6 +4,7 @@ import "./ContactForm.scss";
 
 import TextInput from "components/FormElements/TextInput/TextInput";
 import TextArea from "components/FormElements/TextArea/TextArea";
+import Button from "components/Button/Button";
 
 const ContactForm = (): React.ReactElement => 
 { 
@@ -33,6 +34,10 @@ const ContactForm = (): React.ReactElement =>
 
 			<div className="ContactForm__form-group" placeholder="Message">
 				<TextArea name="message" placeholder="Message" changeHandler={setMessage}/>
+			</div>
+
+			<div className="ContactForm__button">
+				<Button text="Submit"/>
 			</div>
 		</form>
 	);
