@@ -24,6 +24,9 @@ const Navbar = (): React.ReactElement => (
 			<li className="Navbar__item">
 				<NavLink to="/brands" className="Navbar__link" activeClassName="Navbar__link--active">Brands</NavLink>
 			</li>
+			<li className="Navbar__item">
+				<NavLink to="/search" className="Navbar__link" activeClassName="Navbar__link--active">Search</NavLink>
+			</li>
 		</ul>
 
 		<SearchField/>
