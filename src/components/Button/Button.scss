@@ -1,0 +1,12 @@
+@import "../../scss/abstracts/variables";
+
+.Button {
+	background-color: $color-red;
+	color: white;
+	padding: 10px 5px;
+	border-style: none;
+	text-decoration: none;
+	font-size: 14px;
+	width: 100%;
+	cursor: pointer;
+}
