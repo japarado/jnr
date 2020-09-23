@@ -1,5 +1,9 @@
 import React from "react";
+
+import "./Search.scss";
+
 import ProductSearchBar from "components/ProductSearchBar/ProductSearchBar";
+import Products from "components/Products/Products";
 
 const Search = (): React.ReactElement => 
 { 
@@ -7,6 +11,10 @@ const Search = (): React.ReactElement =>
 		<div className="Search">
 			<div className="Search__section">
 				<ProductSearchBar/>
+			</div>
+
+			<div className="Search__section">
+				<Products/>
 			</div>
 		</div>
 	);
