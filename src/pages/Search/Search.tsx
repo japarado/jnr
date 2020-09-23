@@ -16,6 +16,9 @@ const Search = (): React.ReactElement =>
 	const [category, setCategory] = useState<Choice>();
 	const [sortBy, setSortBy] = useState<Choice>();
 
+	useEffect() {
+	}
+
 	return(
 		<div className="Search">
 			<div className="Search__section">
