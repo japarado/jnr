@@ -1,0 +1,20 @@
+.ProductSearchBar {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 3rem;
+	margin: 0 2rem;
+
+	&__pair {
+		display: grid;
+		align-items: center;
+		grid-template-columns: 1fr 2fr;
+	}
+
+	&__label {
+		font-size: 2rem;
+	}
+
+	&__select {
+		width: 100%;
+	}
+}
