@@ -2,7 +2,8 @@ import apiService from "services/apiService";
 
 async function index(): Promise<string[]>
 {
-	await apiService.get("https://pma.apc");
+	const res = await apiService.get("http://localhost:8000/posts");
+	console.log(res);
 	return [];
 }
 
