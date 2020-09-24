@@ -16,20 +16,20 @@ const SearchField = (): React.ReactElement =>
 
 	useEffect(() => 
 	{
-		async function search(searchTerm: string): Promise<string[]> 
-		{
-			let response: string[] = [];
-			try 
-			{
-				response = await searchByTerm(searchTerm);
-			}
-			catch(error) 
-			{
-				console.log(error);
-			}
-			return response;
-		}
-		search(value);
+		/* async function search(searchTerm: string): Promise<string[]> */ 
+		/* { */
+		/* 	let response: string[] = []; */
+		/* 	try */ 
+		/* 	{ */
+		/* 		response = await searchByTerm(searchTerm); */
+		/* 	} */
+		/* 	catch(error) */ 
+		/* 	{ */
+		/* 		console.log(error); */
+		/* 	} */
+		/* 	return response; */
+		/* } */
+		/* search(value); */
 	}, [value]);
 
 	return(
