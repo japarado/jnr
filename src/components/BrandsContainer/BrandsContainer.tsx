@@ -12,69 +12,69 @@ console.log(typeof PanasonicImg);
 
 type Brand = {
 	id?: number;
-	url: string;
+	slug: string;
 	imgUrl: string;
 }
 
 const brands: Brand[] = [
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 	{
-		url: "",
+		slug: "panasonic",
 		imgUrl: PanasonicImg
 	},
 ];
@@ -87,7 +87,7 @@ const BrandsContainer = (): React.ReactElement =>
 		<div className="BrandsContainer">
 			{
 				brands.map((brand: Brand) => (
-					<Link to={brand.url} key={brand.id} className="BrandsContainer__brand">
+					<Link to={`/search?brand=${brand.slug}`} key={brand.id} className="BrandsContainer__brand">
 						<Brand imgUrl={brand.imgUrl}/>
 					</Link>
 				))
