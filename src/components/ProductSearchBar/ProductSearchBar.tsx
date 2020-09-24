@@ -3,13 +3,14 @@ import React, {useState, useEffect} from "react";
 import "./ProductSearchBar.scss";
 
 import Select, {ValueType, ActionMeta} from "react-select";
+import {useHistory} from "react-router-dom";
 
 type Choice = {
 	label: string;
 	value: string;
 }
 
-type OnChange = (value: ValueType<Choice>, actionMeta: ActionMeta<Choice>) => void;
+/* type OnChange = (value: ValueType<Choice>, actionMeta: ActionMeta<Choice>) => void; */
 
 type Props = {
 	brand?: Choice;
@@ -32,14 +33,16 @@ const ProductSearchBar = (props: Props): React.ReactElement =>
 		{
 			const brands = [
 				{
-					label: "Condura",
-					value: "condura",
+					label: "Panasonic",
+					value: "panasonic",
 				},
 				{
 					label: "Colin",
 					value: "colin",
 				}
 			];
+			const brand = brands.find((brand) => brand.value === props.brand?.value);
+			props.handleUpdateBrand(brand);
 			setBrands(brands);
 		}
 
@@ -77,11 +80,12 @@ const ProductSearchBar = (props: Props): React.ReactElement =>
 		fetchCategories();
 		fetchSortBys();
 
+
 	}, []);
 
-	const changeBrand = (value: ValueType<Choice>, actionMeta: ActionMeta<Choice>): void => props.handleUpdateBrand(value);
-	const changeCategory = (value: ValueType<Choice>, actionMeta: ActionMeta<Choice>): void => props.handleUpdateCategory(value);
-	const changeSortBy = (value: ValueType<Choice>, actionMeta: ActionMeta<Choice>): void => props.handleUpdateSortBy(value);
+	const changeBrand = (value: ValueType<Choice>, _actionMeta: ActionMeta<Choice>): void => props.handleUpdateBrand(value);
+	const changeCategory = (value: ValueType<Choice>, _actionMeta: ActionMeta<Choice>): void => props.handleUpdateCategory(value);
+	const changeSortBy = (value: ValueType<Choice>, _actionMeta: ActionMeta<Choice>): void => props.handleUpdateSortBy(value);
 
 	return(
 		<div className="ProductSearchBar">
@@ -100,5 +104,5 @@ const ProductSearchBar = (props: Props): React.ReactElement =>
 		</div>
 	);
 };
- 
+
 export default ProductSearchBar;
