@@ -1,19 +1,31 @@
 import apiService from "services/apiService";
 
-async function index(): Promise<string[]>
+interface QueryParams {
+	[key: string]: string;
+}
+
+type Product = {
+	id: number;
+	name: string;
+	brand: string;
+	price: string;
+	currency?: string;
+	desc?: string;
+}
+
+async function index(): Promise<Product[]>
 {
 	const res = await apiService.get("http://localhost:8000/posts");
 	console.log(res);
 	return [];
 }
 
-async function searchByTerm(searchTerm: string): Promise<string[]>
+async function search(query: QueryParams) : Promise<Product[]>
 {
-	console.log(`Searching for ${searchTerm}`);
-	await apiService.get("https://pma.apc", {
-		params: {searchTerm}
-	});
+	const res = await apiService.get("http://localhost:8000/posts", {params: query});
+	console.log(`Searching for: ${query}`);
+	console.log(res);
 	return [];
 }
 
-export {index, searchByTerm};
+export {index, search};
