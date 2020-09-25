@@ -20,7 +20,7 @@ async function index(): Promise<Product[]>
 	return [];
 }
 
-async function search(query: QueryParams) : Promise<Product[]>
+async function search(query: QueryParams): Promise<Product[]>
 {
 	const res = await apiService.get("http://localhost:8000/posts", {params: query});
 	console.log(`Searching for: ${query}`);
