@@ -4,4 +4,9 @@ function validatePhMobileNumber(number: string): boolean
 	return pattern.test(number);
 }
 
-export {validatePhMobileNumber};
+function slugify(str: string): string 
+{
+	return str.split(" ").join("-").toLowerCase();
+}
+
+export {validatePhMobileNumber, slugify};
