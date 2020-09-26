@@ -8,8 +8,6 @@ import Brand from "components/Brand/Brand";
 
 import {Link} from "react-router-dom";
 
-console.log(typeof PanasonicImg);
-
 type Brand = {
 	id?: number;
 	slug: string;

@@ -3,10 +3,10 @@ import React, {useState, useEffect} from "react";
 import "./Search.scss";
 
 import {useLocation, useHistory} from "react-router-dom";
+import qs from "qs";
 
 import ProductSearchBar from "components/ProductSearchBar/ProductSearchBar";
 import Products from "components/Products/Products";
-import Button from "components/Button/Button";
 
 
 type Choice = {
@@ -14,28 +14,11 @@ type Choice = {
 	value: string;
 }
 
-type ProductQuery = {
-	brand?: string | null;
-	category?: string | null;
-	sortBy?: string | null;
-}
-
 const Search = (): React.ReactElement => 
 { 
 	const [brand, setBrand] = useState<Choice>();
 	const [category, setCategory] = useState<Choice>();
 	const [sortBy, setSortBy] = useState<Choice>();
-
-	const location = useLocation();
-	const queryObject = new URLSearchParams(location.search);
-
-	/* const history = useHistory(); */
-
-	const productQuery: ProductQuery = {
-		brand: queryObject.get("brand"),
-		category: queryObject.get("category"),
-		sortBy: queryObject.get("sortBy"),
-	};
 
 	useEffect(() =>
 	{

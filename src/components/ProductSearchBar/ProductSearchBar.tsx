@@ -40,7 +40,14 @@ const ProductSearchBar = (props: Props): React.ReactElement =>
 				return {label: brand.name, value: brand.name};
 			});
 			setBrands(brands);
-			props.handleUpdateBrand(brands[0]);
+			if(props.brand) 
+			{
+				const brand = brands.find((brand) => brand.value === props.brand?.value);
+				props.handleUpdateBrand(brand);
+			}
+			else {
+				props.handleUpdateBrand(brands[0])
+			}
 		}
 
 		async function fetchCategories(): Promise<void>
@@ -86,7 +93,7 @@ const ProductSearchBar = (props: Props): React.ReactElement =>
 			</div>
 			<div className="ProductSearchBar__pair">
 				<p className="ProductSearchBar__label">Sort By</p>
-				<Select className="ProductSearchBar__select" placeholder="Sort By" options={sortBys} value={props.category} onChange={changeSortBy}/>
+				<Select className="ProductSearchBar__select" placeholder="Sort By" options={sortBys} value={props.sortBy} onChange={changeSortBy}/>
 			</div>
 		</div>
 	);
