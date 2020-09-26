@@ -29,7 +29,7 @@ const Search = (): React.ReactElement =>
 	const location = useLocation();
 	const queryObject = new URLSearchParams(location.search);
 
-	const history = useHistory();
+	/* const history = useHistory(); */
 
 	const productQuery: ProductQuery = {
 		brand: queryObject.get("brand"),
@@ -39,13 +39,15 @@ const Search = (): React.ReactElement =>
 
 	useEffect(() =>
 	{
-		console.log({brand, category, sortBy});
 	}, [brand, category, sortBy]);
 
 	return(
 		<div className="Search">
 			<div className="Search__section">
 				<ProductSearchBar 
+					brand={brand}
+					category={category}
+					sortBy={sortBy}
 					handleUpdateBrand={setBrand}
 					handleUpdateCategory={setCategory}
 					handleUpdateSortBy={setSortBy}

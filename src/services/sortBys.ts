@@ -1,9 +1,9 @@
-type Brand = {
+type SortBy = {
 	id: number;
 	name: string;
 }
 
-async function index(): Promise<Brand[]> 
+async function index(): Promise<SortBy[]> 
 {
 	return [
 		{
@@ -12,11 +12,11 @@ async function index(): Promise<Brand[]>
 		},
 		{
 			id: 2,
-			name: "Panasonic",
+			name: "Best Sellers",
 		},
 		{
 			id: 3,
-			name: "Colin",
+			name: "New Arrivals"
 		}
 	];
 }

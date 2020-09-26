@@ -2,8 +2,11 @@ import React, {useState, useEffect} from "react";
 
 import "./ProductSearchBar.scss";
 
-import Select, {ValueType, ActionMeta} from "react-select";
-import {useHistory} from "react-router-dom";
+import {index as brandIndex} from "services/brands";
+import {index as categoryIndex} from "services/categories";
+import {index as sortByIndex} from "services/sortBys";
+
+import Select, {ValueType} from "react-select";
 
 type Choice = {
 	label: string;
@@ -31,61 +34,45 @@ const ProductSearchBar = (props: Props): React.ReactElement =>
 	{
 		async function fetchBrands(): Promise<void>
 		{
-			const brands = [
-				{
-					label: "Panasonic",
-					value: "panasonic",
-				},
-				{
-					label: "Colin",
-					value: "colin",
-				}
-			];
-			const brand = brands.find((brand) => brand.value === props.brand?.value);
-			props.handleUpdateBrand(brand);
+			const response = await brandIndex();
+			const brands = response.map((brand) => 
+			{
+				return {label: brand.name, value: brand.name};
+			});
 			setBrands(brands);
+			props.handleUpdateBrand(brands[0]);
 		}
 
 		async function fetchCategories(): Promise<void>
 		{
-			const categories = [
-				{
-					label: "Air Conditioning",
-					value: "air-conditioning",
-				},
-				{
-					label: "Ceiling Fan",
-					value: "ceiling-fan",
-				}
-			];
+			const response = await categoryIndex();
+			const categories = response.map((category) => 
+			{
+				return {label: category.name, value: category.name};
+			});
 			setCategories(categories);
+			props.handleUpdateCategory(categories[0]);
 		}
 
 		async function fetchSortBys(): Promise<void>
 		{
-			const sortBys = [
-				{
-					label: "Best Sellers",
-					value: "best-sellers",
-				},
-				{
-					label: "New Arrivals",
-					value: "new-arrivals",
-				}
-			];
+			const response = await sortByIndex();
+			const sortBys = response.map((sortBy) => 
+			{
+				return {label: sortBy.name, value: sortBy.name};
+			});
 			setSortBys(sortBys);
+			props.handleUpdateSortBy(sortBys[0]);
 		}
 
 		fetchBrands();
 		fetchCategories();
 		fetchSortBys();
-
-
 	}, []);
 
-	const changeBrand = (value: ValueType<Choice>, _actionMeta: ActionMeta<Choice>): void => props.handleUpdateBrand(value);
-	const changeCategory = (value: ValueType<Choice>, _actionMeta: ActionMeta<Choice>): void => props.handleUpdateCategory(value);
-	const changeSortBy = (value: ValueType<Choice>, _actionMeta: ActionMeta<Choice>): void => props.handleUpdateSortBy(value);
+	const changeBrand = (value: ValueType<Choice>): void => props.handleUpdateBrand(value);
+	const changeCategory = (value: ValueType<Choice>): void => props.handleUpdateCategory(value);
+	const changeSortBy = (value: ValueType<Choice>): void => props.handleUpdateSortBy(value);
 
 	return(
 		<div className="ProductSearchBar">
