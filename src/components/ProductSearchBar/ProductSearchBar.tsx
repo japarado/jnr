@@ -81,7 +81,6 @@ const ProductSearchBar = (props: Props): React.ReactElement =>
 
 	useEffect(() => 
 	{
-
 		fetchBrands();
 		fetchCategories();
 		fetchSortBys();
