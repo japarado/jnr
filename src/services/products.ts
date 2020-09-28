@@ -1,9 +1,5 @@
 import apiService from "services/apiService";
 
-interface QueryParams {
-	[key: string]: string;
-}
-
 type Product = {
 	id: number;
 	name: string;
@@ -13,6 +9,12 @@ type Product = {
 	desc?: string;
 }
 
+type ProductQuery = {
+	brand?: string;
+	category?: string;
+	sortby?: string;
+}
+
 async function index(): Promise<Product[]>
 {
 	const res = await apiService.get("http://localhost:8000/posts");
@@ -20,11 +22,9 @@ async function index(): Promise<Product[]>
 	return [];
 }
 
-async function search(query: QueryParams): Promise<Product[]>
+async function search(query: ProductQuery): Promise<Product[]>
 {
 	const res = await apiService.get("http://localhost:8000/posts", {params: query});
-	console.log(`Searching for: ${query}`);
-	console.log(res);
 	return [];
 }
 
