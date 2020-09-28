@@ -18,7 +18,7 @@ dependencies:
   ionicons: 5.1.2
   query-string: 6.13.3
   react: 16.13.1
-  react-datepicker: 3.1.3_react-dom@16.13.1+react@16.13.1
+  react-datepicker: 3.2.2_react-dom@16.13.1+react@16.13.1
   react-dom: 16.13.1_react@16.13.1
   react-router-dom: 5.2.0_react@16.13.1
   react-scripts: 3.4.3_17aa7bee3e0054b4610d663579690f97
@@ -8915,7 +8915,7 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-whLy1IeZKY+3fYdqQFuDBf8Auw+qFuVnChWjmxm/UhHWqNHZx+B99EwxTvGYmUBqe3Fjxs4L1BoZTJmPu6usVg==
-  /postcss-load-config/2.1.1:
+  /postcss-load-config/2.1.2:
     dependencies:
       cosmiconfig: 5.2.1
       import-cwd: 2.1.0
@@ -8923,12 +8923,12 @@ packages:
     engines:
       node: '>= 4'
     resolution:
-      integrity: sha512-D2ENobdoZsW0+BHy4x1CAkXtbXtYWYRIxL/JbtRBqrRGOPtJ2zoga/bEZWhV/ShWB5saVxJMzbMdSyA/vv4tXw==
+      integrity: sha512-/rDeGV6vMUo3mwJZmeHfEDvwnTKKqQ0S7OHUi/kJvvtx3aWtyWG2/0ZWnzCt2keEclwN6Tf0DST2v9kITdOKYw==
   /postcss-loader/3.0.0:
     dependencies:
       loader-utils: 1.4.0
       postcss: 7.0.34
-      postcss-load-config: 2.1.1
+      postcss-load-config: 2.1.2
       schema-utils: 1.0.0
     dev: false
     engines:
@@ -9647,7 +9647,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-OfBnObtnGgLGfweORmdZbyEz+3dgVePQBb3zipiaDsMHV1NpWm0rDFYIVXFV/AK+x4VIIfWHhrdMIeoTLyRr2g==
-  /react-datepicker/3.1.3_react-dom@16.13.1+react@16.13.1:
+  /react-datepicker/3.2.2_react-dom@16.13.1+react@16.13.1:
     dependencies:
       classnames: 2.2.6
       date-fns: 2.16.1
@@ -9661,7 +9661,7 @@ packages:
       react: ^16.9.0
       react-dom: ^16.9.0
     resolution:
-      integrity: sha512-4KbdWWAxa/AZJIDhQZwiBpZE9hCYZ4/gTVstdo9WEpFCsfh69xHklB/FZrR95mgkIU7ecU36V2eCuGgIO+ci0A==
+      integrity: sha512-/3D6hfhXcCNCbO8LICuQeoNDItWFyitGo+aLcsi0tAyJLtCInamYRwPIXhsEF+N6/qWim1yNyr71mqjj4YEBmg==
   /react-dev-utils/10.2.1:
     dependencies:
       '@babel/code-frame': 7.8.3
@@ -12280,7 +12280,7 @@ specifiers:
   node-sass: ^4.14.1
   query-string: ^6.13.3
   react: ^16.13.1
-  react-datepicker: ^3.1.3
+  react-datepicker: ^3.2.2
   react-dom: ^16.13.1
   react-router-dom: ^5.2.0
   react-scripts: 3.4.3
