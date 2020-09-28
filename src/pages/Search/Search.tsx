@@ -52,7 +52,7 @@ const Search = (): React.ReactElement =>
 
 	async function searchProducts(query: Query)
 	{
-		const res = await productSearch(query);
+		await productSearch(query);
 	}
 
 	useEffect(() =>

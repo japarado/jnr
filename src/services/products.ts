@@ -17,14 +17,13 @@ type ProductQuery = {
 
 async function index(): Promise<Product[]>
 {
-	const res = await apiService.get("http://localhost:8000/posts");
-	console.log(res);
+	await apiService.get("http://localhost:8000/posts");
 	return [];
 }
 
 async function search(query: ProductQuery): Promise<Product[]>
 {
-	const res = await apiService.get("http://localhost:8000/posts", {params: query});
+	await apiService.get("http://localhost:8000/posts", {params: query});
 	return [];
 }
 
