@@ -3,7 +3,6 @@ import React, {useState, useEffect} from "react";
 import "./Search.scss";
 
 import {useLocation, useHistory} from "react-router-dom";
-import qs from "qs";
 
 import ProductSearchBar from "components/ProductSearchBar/ProductSearchBar";
 import Products from "components/Products/Products";
