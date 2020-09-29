@@ -2,20 +2,26 @@ import React from "react";
 
 import "./Button.scss";
 
-type Props = {
+type ButtonProps = React.HTMLProps<HTMLButtonElement>;
+
+type CustomProps = {
 	text?: string;
 	clickHandler?: Function;
 }
+
+type Props = ButtonProps & CustomProps;
 
 type ClickEvent = React.MouseEvent<HTMLButtonElement>;
 
 const Button = (props: Props): React.ReactElement => 
 {
-	const handleClick = (e: ClickEvent) => props.clickHandler ? props.clickHandler() : (): void => 
+	const handleClick = (): void => props.clickHandler ? props.clickHandler() : (): void => 
 	{};
 	const text = props.text ? props.text : "Click Me";
 	return(
-		<button className="Button" onClick={handleClick}>{text}</button>
+		<button
+			className={`Button ${props.className}`}
+			onClick={handleClick}>{text}</button>
 	);
 };
 
