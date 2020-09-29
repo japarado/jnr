@@ -6,15 +6,10 @@ import {useLocation, useHistory} from "react-router-dom";
 import qs from "query-string";
 
 import {search as productSearch} from "services/products";
+import {Choice, ProductQuery} from "types";
 
 import ProductSearchBar from "components/ProductSearchBar/ProductSearchBar";
 import Products from "components/Products/Products";
-
-
-type Choice = {
-	label: string;
-	value: string;
-}
 
 type Query = {
 	brand?: string;
@@ -27,42 +22,49 @@ const Search = (): React.ReactElement =>
 	const [brand, setBrand] = useState<Choice>();
 	const [category, setCategory] = useState<Choice>();
 	const [sortBy, setSortBy] = useState<Choice>();
+	const [productQuery, setProductQuery] = useState<ProductQuery>();
 
 	const history = useHistory();
 	const location = useLocation();
 
-	function createQuery(): Query
-	{
-		const productQuery: Query = {};
-		if(brand) 
-		{
-			productQuery.brand = brand.value;
-		}
-		if(category) 
-		{
-			productQuery.category = category.value;
-		}
-		if(sortBy) 
-		{
-			productQuery.sortby = sortBy.value;
-		}
-
-		return productQuery;
-	}
-
-	async function searchProducts(query: Query)
-	{
-		await productSearch(query);
-	}
-
 	useEffect(() =>
 	{
-		const productQuery = createQuery();
-		const currentQuery = qs.parse(location.search);
-		const combinedQuery = {...currentQuery, ...productQuery};
-		history.push({search: qs.stringify(combinedQuery)});
+		async function searchProducts(query: Query): Promise<void>
+		{
+			await productSearch(query);
+		}
 
+		function createQuery(): Query
+		{
+			const productQuery: Query = {};
+			if(brand) 
+			{
+				productQuery.brand = brand.value;
+			}
+			if(category) 
+			{
+				productQuery.category = category.value;
+			}
+			if(sortBy) 
+			{
+				productQuery.sortby = sortBy.value;
+			}
+			setProductQuery(productQuery);
+			return productQuery;
+		}
+
+		function adjustQuery(productQuery: Query): void
+		{
+			const currentQuery = qs.parse(location.search);
+			const combinedQuery = {...currentQuery, ...productQuery};
+			history.push({search: qs.stringify(combinedQuery)});
+		}
+
+		const productQuery = createQuery();
+
+		adjustQuery(productQuery);
 		searchProducts(productQuery);
+		console.log("rendering search");
 	}, [brand, category, sortBy]);
 
 	return(
