@@ -28,7 +28,7 @@ const Products = (): React.ReactElement =>
 				<CategoryLinks/>
 			</div>
 
-			<div className="Products__section Products__products">
+			<div className="Products__section">
 				<ProductCategories/>
 			</div>
 		</main>
