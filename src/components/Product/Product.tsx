@@ -1,4 +1,7 @@
 import React from "react";
+
+import "./Product.scss";
+
 import Button from "components/Button/Button";
 
 type Props = {
@@ -14,7 +17,7 @@ const Product = ():  React.ReactElement => (
 		<img className="Product__img" src="" alt="" />
 		<h3 className="Product__name"></h3>
 		<p className="Product__price"></p>
-		<Button/>
+		<Button className="Product__button"/>
 	</div>
 );
 
