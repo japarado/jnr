@@ -1,6 +1,6 @@
 import apiService from "services/apiService";
 
-type Product = {
+export type Product = {
 	id: number;
 	name: string;
 	brand: string;
@@ -9,7 +9,7 @@ type Product = {
 	desc?: string;
 }
 
-type ProductQuery = {
+export type ProductQuery = {
 	brand?: string;
 	category?: string;
 	sortby?: string;
@@ -17,7 +17,7 @@ type ProductQuery = {
 
 async function index(): Promise<Product[]>
 {
-	await apiService.get("http://localhost:8000/posts");
+	await apiService.get("http://localhost:8000/posts?query=PRODUCTS");
 	return [];
 }
 
