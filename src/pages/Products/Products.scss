@@ -2,4 +2,9 @@
 	&__section:not(:last-child) {
 		margin-bottom: 2rem;
 	}
+
+	&__products {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
