@@ -19,14 +19,16 @@ const Products = (): React.ReactElement =>
 	return (
 		<main className="Products">
 			<div className="Products__section">
-				<Hero imgUrl="https://picsum.photos/1920/1080" heroText="Product Categories"/>
+				<Hero
+					imgUrl="https://picsum.photos/1920/1080"
+					heroText="Product Categories"/>
 			</div>
 			
 			<div className="Products__section">
 				<CategoryLinks/>
 			</div>
 
-			<div className="Products__section">
+			<div className="Products__section Products__products">
 				<ProductCategories/>
 			</div>
 		</main>
