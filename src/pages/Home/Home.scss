@@ -1,5 +1,5 @@
+@import "../../scss/abstracts/_mixins.scss";
+
 .Home__section {
-  &:not(:last-child) {
-    margin-bottom: 2rem;
-  }
+	@include children-space-below;
 }

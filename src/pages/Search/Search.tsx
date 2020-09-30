@@ -63,7 +63,7 @@ const Search = (): React.ReactElement =>
 
 	return(
 		<div className="Search">
-			<div className="Search__section">
+			<div className="Search__search-bar">
 				<ProductSearchBar 
 					brand={brand}
 					category={category}
@@ -74,7 +74,7 @@ const Search = (): React.ReactElement =>
 				/>
 			</div>
 
-			<div className="Search__section">
+			<div className="Search__products">
 				<Products/>
 			</div>
 		</div>
