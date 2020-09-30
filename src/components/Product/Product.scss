@@ -1,7 +1,38 @@
-.Product {
-	border: 1px solid;
+@import "../../scss/abstracts/variables";
 
-	&__button {
-		background-color: purple;
-	}
+.Product {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  &__img {
+    object-fit: contain;
+	max-height: 400px;
+	max-width: 300px;
+    flex-grow: 1;
+  }
+
+  &__brand {
+    font-size: 1.5rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+  }
+
+  &__price {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+  }
+
+  &__button {
+	margin-top: 1rem;
+    background-color: $color-red;
+	width: 40%;
+  }
+
+  &__chevron {
+    margin-left: 5px;
+  }
 }

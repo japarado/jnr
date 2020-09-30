@@ -11,12 +11,6 @@ import {Choice, ProductQuery} from "types";
 import ProductSearchBar from "components/ProductSearchBar/ProductSearchBar";
 import Products from "components/Products/Products";
 
-type Query = {
-	brand?: string;
-	category?: string;
-	sortby?: string;
-}
-
 const Search = (): React.ReactElement => 
 { 
 	const [brand, setBrand] = useState<Choice>();
@@ -29,14 +23,14 @@ const Search = (): React.ReactElement =>
 
 	useEffect(() =>
 	{
-		async function searchProducts(query: Query): Promise<void>
+		async function searchProducts(query: ProductQuery): Promise<void>
 		{
 			await productSearch(query);
 		}
 
-		function createQuery(): Query
+		function createQuery(): ProductQuery
 		{
-			const productQuery: Query = {};
+			const productQuery: ProductQuery = {};
 			if(brand) 
 			{
 				productQuery.brand = brand.value;
@@ -53,7 +47,7 @@ const Search = (): React.ReactElement =>
 			return productQuery;
 		}
 
-		function adjustQuery(productQuery: Query): void
+		function adjustQuery(productQuery: ProductQuery): void
 		{
 			const currentQuery = qs.parse(location.search);
 			const combinedQuery = {...currentQuery, ...productQuery};

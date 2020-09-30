@@ -37,7 +37,7 @@ const ContactForm = (): React.ReactElement =>
 			</div>
 
 			<div className="ContactForm__button">
-				<Button text="Submit"/>
+				<Button>Submit</Button>
 			</div>
 		</form>
 	);
