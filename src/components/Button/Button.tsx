@@ -17,11 +17,10 @@ const Button = (props: Props): React.ReactElement =>
 {
 	const handleClick = (): void => props.clickHandler ? props.clickHandler() : (): void => 
 	{};
-	const text = props.text ? props.text : "Click Me";
 	return(
 		<button
 			className={`Button ${props.className}`}
-			onClick={handleClick}>{text}</button>
+			onClick={handleClick}>{props.children}</button>
 	);
 };
 
