@@ -1,4 +1,5 @@
-@import "../../scss//abstracts/mixins";
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/variables";
 
 .ContactUs {
   &__contact {
@@ -15,6 +16,13 @@
 
   &__form {
 	  width: 50%;
+	  transition: 0.3s all;
 	  @include center-by-margin;
   }
+}
+
+.ContactUs__form {
+	@media only screen and (max-width: $bp-largest) {
+		width: 90%;
+	}
 }
