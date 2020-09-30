@@ -7,6 +7,7 @@ export type Product = {
 	price: string;
 	currency?: string;
 	desc?: string;
+	image?: string;
 }
 
 export type ProductQuery = {
@@ -21,10 +22,39 @@ async function index(): Promise<Product[]>
 	return [];
 }
 
-async function search(query: ProductQuery): Promise<Product[]>
+async function search(query?: ProductQuery): Promise<Product[]>
 {
 	await apiService.get("http://localhost:8000/posts", {params: query});
-	return [];
+	const products: Product[] = [
+		{
+			id: 1,
+			name: "Washing Machine Inverter",
+			brand: "Panasonic",
+			price: "30,000",
+			currency: "PHP",
+			desc: "This is a nice product. Please buy more of these",
+			image: "https://picsum.photos/400/300"
+		},
+		{
+			id: 2,
+			name: "Washing Machine Inverter",
+			brand: "Panasonic",
+			price: "30,000",
+			currency: "PHP",
+			desc: "This is a nice product. Please buy more of these",
+			image: "https://picsum.photos/400/300"
+		},
+		{
+			id: 3,
+			name: "Washing Machine Inverter",
+			brand: "Panasonic",
+			price: "30,000",
+			currency: "PHP",
+			desc: "This is a nice product. Please buy more of these",
+			image: "https://picsum.photos/400/300"
+		},
+	];
+	return products;
 }
 
 export {index, search};
