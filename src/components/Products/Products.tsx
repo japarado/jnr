@@ -28,7 +28,9 @@ const Products = (props: Props): React.ReactElement =>
 
 	return(
 		<div className={classes.Products}>
-			{products?.map((product) => <Product {...product}/>)}
+			{products?.map((product) => <Product
+				{...product}
+				key={product.id}/>)}
 		</div>
 	);
 };
