@@ -9,16 +9,16 @@ import SectionHeader from "components/SectionHeader/SectionHeader";
 
 const Home = (): React.ReactElement => (
 	<main className="Home">
-		<div className="Home__section">
+		<div className="Home__hero">
 			<Hero imgUrl="https://picsum.photos/1920/1080" heroText="J&R Appliances"/>
 		</div>
 
-		<div className="Home__section">
+		<div className="Home__product-categories">
 			<SectionHeader text="Product Categories"/>
 			<ProductCategories/>
 		</div>
 
-		<div className="Home__section">
+		<div className="Home__contact-us">
 			<SectionHeader text="Contact Us" classNames="u-m-bottom-3"/>
 			<ContactUs/>
 		</div>
