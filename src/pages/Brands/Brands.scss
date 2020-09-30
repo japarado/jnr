@@ -1,5 +1,6 @@
+@import "../../scss/abstracts/mixins";
+@import "../../scss/abstracts/variables";
+
 .Brands {
-  &__section:not(:last-child) {
-    margin-bottom: 2rem;
-  }
+	@include children-space-below;
 }

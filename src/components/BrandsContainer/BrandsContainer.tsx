@@ -85,7 +85,10 @@ const BrandsContainer = (): React.ReactElement =>
 		<div className="BrandsContainer">
 			{
 				brands.map((brand: Brand) => (
-					<Link to={`/search?brand=${brand.slug}`} key={brand.id} className="BrandsContainer__brand">
+					<Link
+						to={`/search?brand=${brand.slug}`}
+						key={brand.id}
+						className="BrandsContainer__brand">
 						<Brand imgUrl={brand.imgUrl}/>
 					</Link>
 				))
