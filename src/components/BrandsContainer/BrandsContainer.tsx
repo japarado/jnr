@@ -1,12 +1,15 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
 import "./BrandsContainer.scss";
 
 import PanasonicImg from "assets/img/brand_logos/panasonic.png";
 
-import Brand from "components/Brand/Brand";
+import {index as brandIndex} from "services/brands";
 
 import {Link} from "react-router-dom";
+
+import Brand from "components/Brand/Brand";
+
 
 type Brand = {
 	id?: number;
@@ -14,7 +17,7 @@ type Brand = {
 	imgUrl: string;
 }
 
-const brands: Brand[] = [
+const mockBrands: Brand[] = [
 	{
 		slug: "panasonic",
 		imgUrl: PanasonicImg
@@ -77,14 +80,27 @@ const brands: Brand[] = [
 	},
 ];
 
-brands.forEach((brand: Brand, idx: number) => brand.id = idx);
+mockBrands.forEach((brand: Brand, idx: number) => brand.id = idx);
 
 const BrandsContainer = (): React.ReactElement => 
 {
+	const [brands, setBrands] = useState<Brand[]>();
+
+	useEffect(() => 
+	{
+		async function fetchBrands() 
+		{
+			await brandIndex();
+			setBrands([]);
+		}
+
+		fetchBrands();
+	});
+
 	return(
 		<div className="BrandsContainer">
 			{
-				brands.map((brand: Brand) => (
+				mockBrands.map((brand: Brand) => (
 					<Link
 						to={`/search?brand=${brand.slug}`}
 						key={brand.id}
