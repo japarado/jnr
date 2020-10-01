@@ -88,10 +88,12 @@ const BrandsContainer = (): React.ReactElement =>
 
 	useEffect(() => 
 	{
-		async function fetchBrands() 
+		async function fetchBrands(): Promise<void>
 		{
 			await brandIndex();
-			setBrands([]);
+			let x = brands;
+			x = [];
+			setBrands(x);
 		}
 		fetchBrands();
 	}, []);
