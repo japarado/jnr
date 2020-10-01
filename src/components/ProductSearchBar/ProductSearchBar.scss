@@ -1,13 +1,13 @@
 .ProductSearchBar {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 	grid-gap: 3rem;
 	margin: 0 2rem;
 
 	&__pair {
 		display: grid;
 		align-items: center;
-		grid-template-columns: 1fr 2fr;
+		grid-template-columns: 10rem 1fr;
 	}
 
 	&__label {
