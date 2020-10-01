@@ -93,9 +93,8 @@ const BrandsContainer = (): React.ReactElement =>
 			await brandIndex();
 			setBrands([]);
 		}
-
 		fetchBrands();
-	});
+	}, []);
 
 	return(
 		<div className="BrandsContainer">
