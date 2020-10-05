@@ -1,4 +1,4 @@
-import apiService from "services/apiService";
+import apiService, {PRIMARY_ENDPOINT} from "services/apiService";
 
 type ContactForm = {
 	name: string;
@@ -9,7 +9,7 @@ type ContactForm = {
 
 async function submit(contactInfo: ContactForm): Promise<boolean> 
 {
-	const res = await apiService.get("http://localhost:8000/posts", {params: contactInfo});
+	const res = await apiService.get(`${PRIMARY_ENDPOINT}/posts`, {params: contactInfo});
 	return true;
 }
 
