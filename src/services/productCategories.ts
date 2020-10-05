@@ -1,11 +1,11 @@
-import apiService from "services/apiService";
+import apiService, {PRIMARY_ENDPOINT} from "./apiService";
 
 async function index(): Promise<string[]>
 {
 	const body: string[] = [];
 	try 
 	{
-		const response = await apiService.get("https://pma.apc");
+		const response = await apiService.get(`${PRIMARY_ENDPOINT}/posts?query=PRODUCT_CATEGORIES`);
 		console.log(response);
 	}
 	catch(e) 
@@ -13,9 +13,6 @@ async function index(): Promise<string[]>
 		console.log(e);
 	}
 	return body;
-}
-
-async function getBySlug(slug: string) {
 }
 
 export {index};
