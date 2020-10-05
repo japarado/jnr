@@ -1,3 +1,5 @@
+import apiService, {PRIMARY_ENDPOINT} from "services/apiService";
+
 type Category = {
 	id: number;
 	name: string;
@@ -5,6 +7,7 @@ type Category = {
 
 async function index(): Promise<Category[]> 
 {
+	await apiService.get(`${PRIMARY_ENDPOINT}/posts?query=CATEGORIES`);
 	return [
 		{
 			id: 1,
