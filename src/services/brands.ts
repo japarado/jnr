@@ -1,4 +1,4 @@
-import apiService from "./apiService";
+import apiService, {PRIMARY_ENDPOINT} from "./apiService";
 
 type Brand = {
 	id: number;
@@ -7,7 +7,7 @@ type Brand = {
 
 async function index(): Promise<Brand[]> 
 {
-	await apiService.get("http://localhost:8000/posts?query=BRANDS");
+	await apiService.get(`${PRIMARY_ENDPOINT}/posts?query=BRANDS`);
 	return [
 		{
 			id: 1,

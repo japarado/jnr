@@ -1,4 +1,4 @@
-import apiService from "services/apiService";
+import apiService, {PRIMARY_ENDPOINT} from "services/apiService";
 
 export type Product = {
 	id: number;
@@ -18,13 +18,14 @@ export type ProductQuery = {
 
 async function index(): Promise<Product[]>
 {
-	await apiService.get("http://localhost:8000/posts?query=PRODUCTS");
+	await apiService.get(`${PRIMARY_ENDPOINT}/posts?query=PRODUCTS`);
 	return [];
 }
 
 async function search(query?: ProductQuery): Promise<Product[]>
 {
-	await apiService.get("http://localhost:8000/posts", {params: query});
+	// await apiService.get(`${PRIMARY_ENDPOINT}/posts`, {params: query});
+	await apiService.get(`${PRIMARY_ENDPOINT}/posts`, {params: query});
 	const products: Product[] = [
 		{
 			id: 1,
