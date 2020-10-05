@@ -9,7 +9,9 @@ const Brands = (): React.ReactElement => (
 	<main className="Brands">
 
 		<div className="Brands__hero">
-			<Hero heroText="Brands" imgUrl="https://picsum.photos/1920/1080"/>
+			<Hero
+				heroText="Brands"
+				imgUrl="https://picsum.photos/1920/1080"/>
 		</div>
 
 		<div className="Brands__brands">
