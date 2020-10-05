@@ -14,7 +14,10 @@ const Hero = (props: Props): React.ReactElement => (
 			<div className="Hero__text">
 				<HeroText text={props.heroText}/>
 			</div>
-			<img className="Hero__image" src={props.imgUrl} alt="Hero" />
+			<img
+				className="Hero__image"
+				src={props.imgUrl}
+				alt="Hero" />
 		</div>
 	</>
 );
