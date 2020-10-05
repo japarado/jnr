@@ -1,8 +1,7 @@
 import React from "react";
 
-import "./App.scss";
-
 import "./scss/main.scss";
+import "./App.scss";
 
 import {
 	BrowserRouter as Router,
@@ -24,33 +23,36 @@ function App(): React.ReactElement
 	return(
 		<div className="App">
 			<Router>
-				<header className="u-m-bottom-2">
+				<header className="App__header">
 					<Navbar/>
 				</header>
 
-				<Switch>
-					<Route path="/about-us">
-						<AboutUs/>
-					</Route>
-					<Route path="/products/:slug?">
-						<Products/>
-					</Route>
-					<Route path="/brands">
-						<Brands/>
-					</Route>
-					<Route path="/search">
-						<Search/>
-					</Route>
-					<Route path="/">
-						<Home/>
-					</Route>
+				<div className="App__routes">
+					<Switch>
+						<Route path="/about-us">
+							<AboutUs/>
+						</Route>
+						<Route path="/products/:slug?">
+							<Products/>
+						</Route>
+						<Route path="/brands">
+							<Brands/>
+						</Route>
+						<Route path="/search">
+							<Search/>
+						</Route>
+						<Route path="/">
+							<Home/>
+						</Route>
+						<Route>
+							<NotFound/>
+						</Route>
+					</Switch>
+				</div>
 
-					<Route>
-						<NotFound/>
-					</Route>
-				</Switch>
-
-				<Footer/>
+				<div className="App__footer">
+					<Footer/>
+				</div>
 			</Router>
 		</div>
 	);

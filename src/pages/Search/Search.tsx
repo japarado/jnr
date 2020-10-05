@@ -58,7 +58,6 @@ const Search = (): React.ReactElement =>
 
 		adjustQuery(productQuery);
 		searchProducts(productQuery);
-		console.log("rendering search");
 	}, [brand, category, sortBy]);
 
 	return(
