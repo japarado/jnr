@@ -25,4 +25,5 @@ apiService.interceptors.response.use((response: AxiosResponse) =>
 	return Promise.reject(error);
 });
 
+export const PRIMARY_ENDPOINT = process.env.REACT_APP_PRIMARY_BE_ENDPOINT;
 export default apiService;
