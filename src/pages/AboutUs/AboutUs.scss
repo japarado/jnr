@@ -1,5 +1,13 @@
 @import "../../scss/abstracts/mixins";
 
-.AboutUs__section {
+.AboutUs {
 	@include children-space-below;
+
+	&__story {
+		margin: 0 3rem;
+		text-align: justify;
+		text-justify: inter-word;
+		line-height: 2;
+		font-size: 1.2rem;
+	}
 }
