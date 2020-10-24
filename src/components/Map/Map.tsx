@@ -22,8 +22,9 @@ type Props = {
 
 const Map = (props: Props): React.ReactElement =>
 {
+	const apiKey = process.env.REACT_APP_MAPS_API_KEY ? process.env.REACT_APP_MAPS_API_KEY : "";
 	return (
-		<LoadScript googleMapsApiKey={process.env.REACT_APP_MAPS_API_KEY}>
+		<LoadScript googleMapsApiKey={apiKey}>
 			<GoogleMap
 				mapContainerStyle={containerStyle}
 				center={center}
